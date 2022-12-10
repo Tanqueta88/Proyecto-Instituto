@@ -1,0 +1,36 @@
+﻿@page
+@model ProyInstituto.Pages.Profesores.DetalleModel
+@functions{
+    void MostrarFechaNacimiento(DateTime fec){
+        <span class="date">@fec.ToString("dd MMMM yyyy")</span>
+    }
+    async Task MostrarFotoPerfil(int idprofesor){
+         <img class="img-fluid rounded-start"  src="@Url.Content("~/imagenes/personas/" + idprofesor + ".jpg" )"   /> 
+    }
+}
+
+
+<div class="card text-center">
+    <div class="card-header">
+        Datos del profesor: 
+        @Model.ProfesorDetalle.Nombre @Model.ProfesorDetalle.Apellido
+    </div>
+    <div class="row g-0"> 
+            <div class="col-md-4"> 
+                @{await MostrarFotoPerfil(@Model.ProfesorDetalle.Id);}
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text"><span class="font-weight-bold">Fecha Nacimiento: </span>
+                    @{ MostrarFechaNacimiento( @Model.ProfesorDetalle.FechaNacimiento);}</p>
+                    <p class="card-text"><span class="font-weight-bold">DNI:</span> 
+                        @Model.ProfesorDetalle.DNI</p>
+                    <p class="card-text"><span class="font-weight-bold">Legajo:</span>
+                        @Model.ProfesorDetalle.Legajo</p>
+                    <p class="card-text"><span class="font-weight-bold">Nivel de estudio: </span> 
+                        @Model.ProfesorDetalle.Nivel</p>
+                </div>
+            </div>
+       </div>
+
+</div>

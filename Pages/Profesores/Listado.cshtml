@@ -1,0 +1,117 @@
+﻿@page
+@model ProyInstituto.Pages.Profesores.ListadoModel
+@using System.Threading.Tasks;
+@{
+
+}
+@functions{
+    void MostrarMateria(int materiaid){
+        switch(materiaid){
+            case 1:
+                <span>Herramientas</span>
+                break;
+            case 2:
+                <span>POO</span>
+                break;
+            case 3:
+                <span>WEB</span>
+                break;
+        }
+    }
+   async Task MostrarADistancia(bool distanc){
+        if(distanc){
+            <span>VIRTUAL</span>
+        }
+        else{
+            <span><img src="~/favicon.ico" class="rounded-circle"></span>
+        }
+    }
+    void MostrarNivel(int nivelprofe){
+        switch(nivelprofe){
+            case 1:
+                <span class="badge bg-warning">Secundario</span>
+                break;
+            case 2:
+                <span class="badge bg-danger">Terciario</span>
+                break;
+            case 3:
+                <span class="badge bg-success">Universitario</span>
+                break;
+        }
+    }
+    void MostrarFechaNacimiento(DateTime fec){
+        <span class="date">@fec.ToString("dd MMMM yyyy")</span>
+    }
+}
+<a asp-page="Crear" class="btn btn-success" > Nuevo profesor </a>
+
+<form method="get" >
+    <input type="text" placeholder="Buscar por Nombre" name="FiltroNombre" />
+    <input type="text" placeholder="Buscar por Apellido" name="FiltroApellido" />
+    <input type="submit" class="btn btn-warning" value="Buscar" />
+</form>
+
+ 
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr class="table-success">
+            <th>Nro</th>
+            <th>
+                <a asp-page="./Listado" asp-route-CampoOrden="@Model.NombreOrden">
+                    Nombre del profesor
+                </a>
+                
+            </th>
+            <th>
+                <a asp-page="./Listado" asp-route-CampoOrden="OrdenPorApellido">
+                    apellido asc
+                </a>
+                <a asp-page="./Listado" asp-route-CampoOrden="OrdenPorApellidoDesc">
+                    apellido desc
+                </a>
+                
+            </th>
+            <th>A Distancia</th>
+            <th>Nivel </th>
+            <th>Fec Nac</th>
+            <th>Materia</th>
+            <th></th>
+        </tr> 
+    </thead>
+    <tbody>
+        @if (Model.NominaProfesores.Count == 0)
+        {
+            <tr class="badge bg-danger">
+                <td colspan="4"> No se encontraron resultados para la busqueda</td>
+            </tr>
+        }
+        @foreach (var profe in Model.NominaProfesores)
+        {
+            <tr>
+                <td>@profe.Id</td>
+                <td><a asp-page="Detalle" asp-route-id="@profe.Id" >@profe.Nombre</a></td>
+                <td>@profe.Apellido</td>
+                <td>
+                    @{ await MostrarADistancia(@profe.ADistancia);}
+                </td>
+                <td>
+                   @{ MostrarNivel(@profe.Nivel);} 
+                </td>
+                <td>
+                   @{MostrarFechaNacimiento(@profe.FechaNacimiento);} 
+                </td>
+                <td>
+                    @{
+                        MostrarMateria(@profe.Materia);
+                    } 
+                </td>
+                <td>
+                    <a asp-page="Editar" asp-route-id="@profe.Id" class="btn btn-primary">Modificar</a>
+                    <a asp-page="./Listado" asp-route-idBorrar="@profe.Id" asp-page-handler="Borrar" class="btn btn-danger" onclick="return confirm('¿Quiere eliminar?')" >Eliminar</a>
+                    <a asp-page="Detalle" asp-route-id="@profe.Id" class="btn btn-success">Detalle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,67 @@
+﻿@page
+@model ProyInstituto.Pages.Profesores.EditarModel
+ 
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+ 
+
+<form method="post">
+<div class="form-group">
+        <label class="form-label" asp-for="ProfesorEdit.Id"></label>
+        <input class="form-control" asp-for="ProfesorEdit.Id" />
+        <span class="badge bg-danger" asp-validation-for="ProfesorEdit.Id"></span>
+    </div>    
+    <div class="form-group">
+        <label class="form-label" asp-for="ProfesorEdit.Legajo"></label>
+        <input  class="form-control" asp-for="ProfesorEdit.Legajo"/>
+            <span class="badge bg-danger" asp-validation-for="ProfesorEdit.Legajo"></span>
+    </div>
+    <div class="form-group">
+        <label  class="form-label" >Nombre</label>
+        <input class="form-control" asp-for="ProfesorEdit.Nombre"/>
+            <span class="badge bg-danger" asp-validation-for="ProfesorEdit.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >Apellido</label>
+        <input class="form-control" asp-for="ProfesorEdit.Apellido"/>
+            <span style="background-color:red;" asp-validation-for="ProfesorEdit.Apellido"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >DNI</label>
+        <input class="form-control" asp-for="ProfesorEdit.DNI" />
+    </div>
+    <div class="form-group">
+        <input class="form-label" asp-for="ProfesorEdit.ADistancia" />
+        <label class="form-control" >¿Es a distancia?</label>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <label class="form-check-label" >Secundario</label>
+            <input class="form-check-input" type="radio" asp-for="ProfesorEdit.Nivel" value="1"  />
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" >Terciario</label>
+            <input class="form-check-input" type="radio" asp-for="ProfesorEdit.Nivel" value="2"  />
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" >Universitario</label>
+            <input class="form-check-input" type="radio" asp-for="ProfesorEdit.Nivel" value="3"  />
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label class="form-label">Materia</label>
+        <select asp-for="ProfesorEdit.Materia" asp-items="Model.MateriasLista">
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >Fecha de Nacimiento</label>
+        <input class="form-control" type="date" asp-for="ProfesorEdit.FechaNacimiento" />
+    </div>
+    <div class="form-group">
+        <input class="btn btn-danger"  type="submit" value="ACTUALIZAR" />
+    </div> 
+</form>
+<a asp-page="Listado" class="btn btn-warning">Volver al listado</a>

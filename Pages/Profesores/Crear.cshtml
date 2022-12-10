@@ -1,0 +1,42 @@
+﻿@page
+@model ProyInstituto.Pages.CrearModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label class="form-label" asp-for="ProfesorIng.Id"></label>
+        <input class="form-control" asp-for="ProfesorIng.Id" />
+    </div>    
+    <div class="form-group">
+        <label class="form-label" asp-for="ProfesorIng.Legajo"></label>
+        <input  class="form-control" asp-for="ProfesorIng.Legajo"/>
+    </div>
+    <div class="form-group">
+        <label  class="form-label" >Nombre</label>
+        <input class="form-control" asp-for="ProfesorIng.Nombre"/>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >Apellido</label>
+        <input class="form-control" asp-for="ProfesorIng.Apellido"/>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >DNI</label>
+        <input class="form-control" asp-for="ProfesorIng.DNI" />
+    </div>
+    <div class="form-group">
+        <input class="form-label" asp-for="ProfesorIng.ADistancia" />
+        <label class="form-control" >¿Es a distancia?</label>
+    </div>
+    <div class="form-group">
+        <label class="form-label" >Nivel</label>
+        <input class="form-control" asp-for="ProfesorIng.Nivel" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" >Fecha de Nacimiento</label>
+        <input class="form-control" asp-for="ProfesorIng.FechaNacimiento" />
+    </div>
+    <div class="form-group">
+        <input class="form-control"  type="submit" value="GRABAR" />
+    </div>
+</form>

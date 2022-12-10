@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyInstituto
+build_property.RootNamespace = ProyInstituto
+build_property.ProjectDir = /home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/jorge_linux/GIT_LOCAL/Proyecto-Instituto
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Alumnos/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWx1bW5vcy9FZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Alumnos/Nuevo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWx1bW5vcy9OdWV2by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Profesores/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9DcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Profesores/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9EZXRhbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Profesores/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9FZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Profesores/Listado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy9MaXN0YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dm87ubseav
