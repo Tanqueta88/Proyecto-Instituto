@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/ProyInstituto.csproj",
+      "projectUniqueName": "/home/jorge_linux/VisualStudioProyects/Proyecto-Instituto/ProyInstituto.csproj",
       "projectName": "ProyInstituto",
-      "projectPath": "/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/ProyInstituto.csproj",
+      "projectPath": "/home/jorge_linux/VisualStudioProyects/Proyecto-Instituto/ProyInstituto.csproj",
       "packagesPath": "/home/jorge_linux/.nuget/packages/",
-      "outputPath": "/home/jorge_linux/GIT_LOCAL/Proyecto-Instituto/obj/",
+      "outputPath": "/home/jorge_linux/VisualStudioProyects/Proyecto-Instituto/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jorge_linux/.nuget/NuGet/NuGet.Config"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
       }
     }
   }

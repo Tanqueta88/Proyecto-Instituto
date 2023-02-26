@@ -1,18 +1,28 @@
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+    font-size: 14px;
+    background-color: rgb(215, 226, 226);
   }
-}
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+      background-color: fuchsia;
+    }
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.impulsonegocios.com%2Fwp-content%2Fuploads%2F2020%2F11%2FREGRESO-A-CLASES.jpg&f=1&nofb=1&ipt=1cb4507654af61f9a2f7c8c7457131c0082788bae47ece597bf8f12363907ce4&ipo=images);
+  }
+  
+  body {
+    margin-bottom: 60px;
+    background-color: rgb(222, 225, 224);
+  }
 
-html {
-  position: relative;
-  min-height: 100%; 
-}
-
-body {
-  margin-bottom: 60px;
-}
+    header {
+      background-color: blue;
+      height: 100px;
+    }
+  
